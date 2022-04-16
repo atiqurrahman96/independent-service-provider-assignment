@@ -1,0 +1,23 @@
+[
+    {
+        "id": "625b0d48f01dcce096bba20b",
+        "picture": "https://i.ibb.co/J2PWrMQ/service2.png",
+        "name": "Wedding Photography",
+        "price": 450,
+        "about": "Wedding photography is a specialty in photography that is primarily focused on the photography of events and activities relating to weddings. It may include other types of portrait photography of the couple before the official wedding day, such as a pre-wedding engagement session.This service which is provided by me. I try my best to bind your beautiful moment with photography. I provide this service very cordially.\r\n"
+    },
+    {
+        "id": "625b0d48c04e6fe1a27fe106",
+        "picture": "https://i.ibb.co/ypr4RG7/service3.jpg",
+        "name": "Sports Photography",
+        "price": 400,
+        "about": "This is my another service is sports photography . I provide this service from the field and try to keep marvelous moments.\r\n"
+    },
+    {
+        "id": "625b0d489d54d60aec3d06ff",
+        "picture": "https://i.ibb.co/jLYkdmY/service1.png",
+        "name": "Wild Photography",
+        "price": 500,
+        "about": "The other service of mine is wild photography .Wildlife photography is a genre of photography concerned with documenting various forms of wildlife in their natural habitat.\r\n"
+    }
+]
