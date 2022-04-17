@@ -10,6 +10,7 @@ import SignUp from "./Pages/Home/SignUp/SignUp"
 import Footer from "./Shared/Footer/Footer"
 import ServiceDescription from './Pages/Home/ServiceDescription/ServiceDescription';
 import CheckOut from './Pages/Home/LogIn/CheckOut/CheckOut';
+import RequireAuth from './Pages/Home/LogIn/RequireAuth/RequireAuth';
 function App() {
   return (
     <div className="App">
@@ -18,7 +19,9 @@ function App() {
         <Route path='/' element={<Home />}></Route>
         <Route path='/home' element={<Home />}></Route>
         <Route path='/service/:serviceId' element={<ServiceDescription />}></Route>
-        <Route path='/checkout' element={<CheckOut />}></Route>
+        <Route path='/checkout' element={<RequireAuth>
+          <CheckOut />
+        </RequireAuth>}></Route>
         <Route path='/blogs' element={<Blogs />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/logIn" element={<LogIn />}></Route>

@@ -24,6 +24,7 @@ const LogIn = () => {
     }
     if (user) {
         navigate('/home')
+        console.log(user);
     }
     const navigateToSignUp = event => {
         navigate('/signUp')
