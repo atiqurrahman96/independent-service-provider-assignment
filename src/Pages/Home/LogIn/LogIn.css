@@ -1,0 +1,6 @@
+.form-container {
+    border-radius: 26px;
+    background: #e0e0e0;
+    box-shadow: inset 17px 17px 33px #7b7b7b,
+        inset -17px -17px 33px #ffffff;
+}
