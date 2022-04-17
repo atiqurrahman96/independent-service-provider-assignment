@@ -7,7 +7,7 @@ const LogIn = () => {
     const passwordRef = useRef('');
     const navigate = useNavigate();
 
-    const handleSignUp = event => {
+    const handleSignIn = event => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
@@ -21,7 +21,7 @@ const LogIn = () => {
         <div>
             <h1>Please Log In</h1>
             <div className='form-container mx-auto w-50'>
-                <Form onSubmit={handleSignUp}>
+                <Form onSubmit={handleSignIn}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
                         <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
