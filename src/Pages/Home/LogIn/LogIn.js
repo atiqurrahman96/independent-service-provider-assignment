@@ -6,6 +6,8 @@ import auth from '../../../firebase.init';
 
 import './LogIn.css'
 import ThirdPartyLogIn from './ThirdPartyLogIn/ThirdPartyLogIn';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const LogIn = () => {
     const emailRef = useRef('');
     const passwordRef = useRef('');
@@ -44,9 +46,15 @@ const LogIn = () => {
     }
 
     const resetPassword = async () => {
+
         const email = emailRef.current.value;
-        await sendPasswordResetEmail(email);
-        alert('Sent email');
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast('Sent email');
+        }
+        else {
+            toast('Please enter your email')
+        }
     }
     return (
         <div>
@@ -72,11 +80,11 @@ const LogIn = () => {
                 </Form>
                 <p>{errorElement}</p>
                 <p>Don't have an account yet? <Link to='/signUp' className='text-danger pe-auto text-decoration-none' onClick={navigateToSignUp}>Please Sign Up </Link></p>
-                <p>Forget Password? <Link to='/home' className='text-danger pe-auto text-decoration-none' onClick={resetPassword}>Reset Password </Link></p>
+                <p>Forget Password? <Button to='/home' className='text-danger bg-white border-0 pe-auto text-decoration-none' onClick={resetPassword}>Reset Password </Button></p>
 
             </div>
             <ThirdPartyLogIn></ThirdPartyLogIn>
-
+            <ToastContainer />
         </div>
     );
 };
