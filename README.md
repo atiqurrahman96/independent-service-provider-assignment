@@ -1,8 +1,11 @@
 # Willy Loman Photography Corner.
 ## [click here to visit my website](https://willy-loman-photography-corner.web.app/)
-### whatever I have used so far in project they are given below: \
+### whatever I have used so far in project they are given below: 
 1. Create-react-app\
 2.React Router .\
+3.React Firebase hooks.\
+4.React Bootstrap.\
+5.Active Link.\
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
