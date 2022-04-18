@@ -14,7 +14,7 @@ const Service = ({ service }) => {
             <div className='service-container'>
                 <img src={picture} alt="" />
                 <h2>Name:{name}</h2>
-                <h4>Price:{price}</h4>
+                <h4>Price:${price}m/o</h4>
                 <p>About:{about}</p>
                 <button onClick={() => handleNavigateToDescription(id)}>Book Now</button>
             </div>

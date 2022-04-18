@@ -5,6 +5,7 @@ import auth from '../../../../firebase.init';
 
 
 
+
 const ThirdPartyLogIn = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const [signInWithGithub, anotherUser, anotherLoading, anotherError] = useSignInWithGithub(auth);
@@ -29,7 +30,8 @@ const ThirdPartyLogIn = () => {
             </div>
             {errorElement}
             <div>
-                <button onClick={() => signInWithGoogle()}>Continue with Google</button>
+                <button className='m-2' onClick={() => signInWithGoogle()}>Continue with Google</button>
+                <br />
                 <button onClick={() => signInWithGithub()}>Continue with GitHub</button>
             </div>
         </div>
