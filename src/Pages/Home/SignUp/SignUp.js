@@ -13,7 +13,7 @@ const SignUp = () => {
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
     const handleSignUp = event => {
         event.preventDefault();
         const email = emailRef.current.value;
