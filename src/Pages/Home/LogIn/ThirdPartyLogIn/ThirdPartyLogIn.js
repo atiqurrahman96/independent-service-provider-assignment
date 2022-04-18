@@ -3,10 +3,6 @@ import React from 'react';
 import { useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import auth from '../../../../firebase.init';
-
-
-
-
 const ThirdPartyLogIn = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const [signInWithGithub, anotherUser, anotherLoading, anotherError] = useSignInWithGithub(auth);
@@ -31,9 +27,9 @@ const ThirdPartyLogIn = () => {
             </div>
             {errorElement}
             <div>
-                <button className='m-2' onClick={() => signInWithGoogle()}>Continue with Google</button>
+                <button className='m-2 bg-primary text-white text-decoration-none border-0 rounded' onClick={() => signInWithGoogle()}>Continue with Google</button>
                 <br />
-                <button onClick={() => signInWithGithub()}>Continue with GitHub</button>
+                <button className='bg-primary text-white text-decoration-none border-0 rounded' onClick={() => signInWithGithub()}>Continue with GitHub</button>
             </div>
         </div>
     );
