@@ -11,6 +11,7 @@ import Footer from "./Shared/Footer/Footer"
 import ServiceDescription from './Pages/Home/ServiceDescription/ServiceDescription';
 import CheckOut from './Pages/Home/LogIn/CheckOut/CheckOut';
 import RequireAuth from './Pages/Home/LogIn/RequireAuth/RequireAuth';
+import NotFound from './Shared/NotFound/NotFound';
 function App() {
   return (
     <div className="App">
@@ -26,8 +27,9 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/logIn" element={<LogIn />}></Route>
         <Route path="/signUp" element={<SignUp />}></Route>
-
+        <Route path='*' element={<NotFound />}></Route>
       </Routes>
+
       <Footer></Footer>
 
     </div>
